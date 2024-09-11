@@ -129,6 +129,7 @@ else:
         "FluxControlNetPipeline",
         "FluxImg2ImgPipeline",
         "FluxInpaintPipeline",
+        "FluxControlNetInpaintPipeline",
         "FluxPipeline",
     ]
     _import_structure["audioldm"] = ["AudioLDMPipeline"]
@@ -501,7 +502,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             VersatileDiffusionTextToImagePipeline,
             VQDiffusionPipeline,
         )
-        from .flux import FluxControlNetPipeline, FluxImg2ImgPipeline, FluxInpaintPipeline, FluxPipeline
+        from .flux import FluxControlNetPipeline, FluxControlNetInpaintPipeline, FluxImg2ImgPipeline, FluxInpaintPipeline, FluxPipeline
         from .hunyuandit import HunyuanDiTPipeline
         from .i2vgen_xl import I2VGenXLPipeline
         from .kandinsky import (
